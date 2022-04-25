@@ -16,7 +16,8 @@
     "declaration": true,
     "sourceMap": true,
     "importHelpers": true,
-    "resolveJsonModule": false
+    "resolveJsonModule": false,
+    "declarationDir": "./lib"
   },
   "exclude": [
     "coverage",

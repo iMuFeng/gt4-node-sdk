@@ -1,7 +1,7 @@
 {
   "name": "gt4-node-sdk",
   "description": "GeeTest4 Node.js SDK",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/iMuFeng/gt4-node-sdk",
   "author": "mufeng.me@gmail.com",
   "repository": {
@@ -11,6 +11,7 @@
   "license": "MIT",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc -p tsconfig-build.json",
