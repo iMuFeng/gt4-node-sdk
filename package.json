@@ -1,0 +1,53 @@
+{
+  "name": "gt4-node-sdk",
+  "description": "GeeTest4 Node.js SDK",
+  "version": "0.0.1",
+  "homepage": "https://github.com/iMuFeng/gt4-node-sdk",
+  "author": "mufeng.me@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iMuFeng/gt4-node-sdk.git"
+  },
+  "license": "MIT",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig-build.json",
+    "build:cjs": "tsc -p tsconfig-build-cjs.json",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write ./src",
+    "lint": "eslint . --ext .ts --quiet"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run type-check"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "npm run lint",
+      "npm run format"
+    ]
+  },
+  "dependencies": {
+    "got": "11.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "coveralls": "^3.1.1",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.5",
+    "prettier": "^2.5.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  }
+}
