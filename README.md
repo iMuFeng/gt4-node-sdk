@@ -1,7 +1,6 @@
 # gt4 node sdk
 
 [![Build Status](https://github.com/iMuFeng/gt4-node-sdk/workflows/CI/badge.svg)](https://github.com/iMuFeng/gt4-node-sdk/actions)
-[![Coverage](https://img.shields.io/codecov/c/github/iMuFeng/gt4-node-sdk/master.svg?sanitize=true)](https://codecov.io/github/iMuFeng/gt4-node-sdk)
 [![NPM Version](https://img.shields.io/npm/v/gt4-node-sdk.svg?sanitize=true)](https://www.npmjs.com/package/gt4-node-sdk)
 
 GeeTest4 Node.js SDK
