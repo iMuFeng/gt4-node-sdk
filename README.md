@@ -1,9 +1,7 @@
-# gt4 node sdk
+# GeeTest v4 Node.js SDK
 
 [![Build Status](https://github.com/iMuFeng/gt4-node-sdk/workflows/CI/badge.svg)](https://github.com/iMuFeng/gt4-node-sdk/actions)
 [![NPM Version](https://img.shields.io/npm/v/gt4-node-sdk.svg?sanitize=true)](https://www.npmjs.com/package/gt4-node-sdk)
-
-GeeTest4 Node.js SDK
 
 ## Installation
 
@@ -31,14 +29,6 @@ if (result === 'success') {
 } else {
 	console.log('fail: %s', reason)
 }
-```
-
-## Tests
-
-Tests are using jest, to run the tests use:
-
-```bash
-$ npm run test
 ```
 
 ## MIT license
