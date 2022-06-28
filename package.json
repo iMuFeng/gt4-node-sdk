@@ -33,7 +33,7 @@
     ]
   },
   "dependencies": {
-    "got": "11.8.2"
+    "got": "11.8.5"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",
