@@ -58,7 +58,7 @@ export class GeeTest {
       .json()
   }
 
-  hmacSha256Encode(str: string, key: string) {
+  private hmacSha256Encode(str: string, key: string) {
     return createHmac('sha256', key).update(str).digest('hex')
   }
 }
